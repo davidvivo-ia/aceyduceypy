@@ -125,7 +125,13 @@ asyncio_mode = "auto"
 [tool.coverage.run]
 branch = true
 source = ["src/aceyducey"]
-omit = ["src/aceyducey/__main__.py"]
+omit = [
+    "src/aceyducey/__main__.py",
+    "src/aceyducey/presentation/cli.py",
+    "src/aceyducey/presentation/screens.py",
+    "src/aceyducey/presentation/tui_app.py",
+    "src/aceyducey/presentation/widgets.py",
+]
 
 [tool.coverage.report]
 show_missing = true

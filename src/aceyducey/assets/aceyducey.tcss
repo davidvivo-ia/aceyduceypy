@@ -1,0 +1,172 @@
+/* Acey-Ducey TUI stylesheet. Phosphor green + amber on carbon. */
+
+Screen {
+    background: #0b0d0a;
+    color: #7CFF8A;
+}
+
+Header {
+    background: #1a1f1c;
+    color: #7CFF8A;
+}
+
+Footer {
+    background: #1a1f1c;
+    color: #5C6660;
+}
+
+#splash {
+    align: center middle;
+    padding: 2 4;
+}
+
+#splash .title {
+    color: #7CFF8A;
+    text-style: bold;
+    padding-bottom: 1;
+}
+
+#splash .subtitle {
+    color: #5C6660;
+}
+
+#splash .hint {
+    color: #F0B14E;
+    padding-top: 2;
+}
+
+#table {
+    layout: vertical;
+    height: 100%;
+    background: #0b0d0a;
+}
+
+#header-bar {
+    height: 3;
+    background: #1a1f1c;
+    color: #7CFF8A;
+    content-align: center middle;
+    padding: 0 2;
+}
+
+#hud {
+    height: 1;
+    dock: top;
+    background: #1a1f1c;
+    color: #5C6660;
+    padding: 0 2;
+}
+
+#main {
+    layout: horizontal;
+    height: 1fr;
+    padding: 1 2;
+}
+
+#cards-pane {
+    width: 3fr;
+    layout: vertical;
+    content-align: center middle;
+}
+
+#cards-row {
+    height: auto;
+    content-align: center middle;
+    padding: 1 0;
+}
+
+#side-pane {
+    width: 1fr;
+    layout: vertical;
+    background: #1a1f1c;
+    padding: 1 2;
+}
+
+.label-muted {
+    color: #5C6660;
+}
+
+.value-accent {
+    color: #F0B14E;
+    text-style: bold;
+}
+
+.value-success {
+    color: #9AE66E;
+    text-style: bold;
+}
+
+.value-danger {
+    color: #E45858;
+    text-style: bold;
+}
+
+#bet-row {
+    height: 3;
+    dock: bottom;
+    background: #1a1f1c;
+    padding: 0 2;
+    layout: horizontal;
+}
+
+#bet-input {
+    width: 1fr;
+    background: #0b0d0a;
+    color: #F0B14E;
+    border: tall #5C6660;
+}
+
+#bet-input:focus {
+    border: tall #7CFF8A;
+}
+
+#bet-actions {
+    width: auto;
+    padding-left: 2;
+}
+
+Button {
+    background: #1a1f1c;
+    color: #7CFF8A;
+    border: tall #5C6660;
+}
+
+Button:hover {
+    border: tall #7CFF8A;
+}
+
+Button.-primary {
+    background: #1f3a26;
+    color: #9AE66E;
+}
+
+Button.-danger {
+    background: #3a1f1f;
+    color: #E45858;
+}
+
+CardWidget {
+    width: 13;
+    height: 9;
+    content-align: center middle;
+}
+
+CardWidget.red {
+    color: #E45858;
+}
+
+CardWidget.highlight {
+    color: #F0B14E;
+    text-style: bold;
+}
+
+#summary {
+    padding: 2 4;
+    align: center middle;
+}
+
+.toast {
+    color: #F0B14E;
+    text-style: italic;
+    padding: 1 0;
+}
