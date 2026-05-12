@@ -40,6 +40,21 @@ uv sync
 uv run aceyducey
 ```
 
+O sin script de uv, con un solo fichero en la raíz:
+
+```bash
+python play.py                 # mismo CLI; acepta los mismos flags
+python play.py --demo          # partida automática
+```
+
+Y si prefieres `pip` puro:
+
+```bash
+pip install -e .
+aceyducey                      # script instalado
+python -m aceyducey            # módulo
+```
+
 ## Opciones de línea de comandos
 
 | Flag | Efecto |
