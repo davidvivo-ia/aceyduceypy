@@ -30,7 +30,7 @@ def _hint_install() -> int:
 
 def main() -> int:
     try:
-        from aceyducey.presentation.cli import app
+        from aceyducey.presentation.cli import app  # noqa: PLC0415
     except ModuleNotFoundError as exc:
         if exc.name in {"typer", "textual", "rich", "pydantic", "structlog"}:
             return _hint_install()
